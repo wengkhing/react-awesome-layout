@@ -68,9 +68,11 @@ function generateBlockClasses (props) {
     case 'reverse':
       classNames += ' up'
       break
+    case false:
+    case 'none':
+      break
     default:
-      console.warn(`'${blockProps.layout}' is not a valid value for property 'wrap'.\nDefault value 'down' will be used instead.`)
-      classNames += ' down'
+      console.warn(`'${blockProps.layout}' is not a valid value for property 'wrap'.\nDefault value 'none' will be used instead.`)
   }
 
   // Validate 'align' props and assign className accordingly
@@ -148,11 +150,11 @@ function generateChildClasses (props, parentLayout, gutter) {
 
   // Validate 'basis' props and assign className and style accordingly
   switch (childProps.basis) {
-    case 'grow':
-      classNames += ' grow'
+    case 'fill':
+      classNames += ' fill'
       break
     case 'auto':
-      classNames += ' no-grow'
+      classNames += ' no-fill'
       break
     default:
       if (!validBasisValue.test(childProps.basis)) {
@@ -180,7 +182,7 @@ function generateChildClasses (props, parentLayout, gutter) {
   }
 
   if (gutter && validGutterValue.test(gutter)) {
-    style.margin = `${parseInt(gutter.replace('px', '')) / 2}px`
+    style.margin = `${parseInt(gutter.replace('px', ''), 10) / 2}px`
   } else if (gutter) {
     console.warn(`'${gutter}' is not a valid value for property 'gutter'.\nPlease use numerical value postfix with 'px'. Example: 8px'`)
   }
