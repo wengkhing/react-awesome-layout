@@ -179,9 +179,9 @@ function generateChildClasses (props, parentLayout, gutter) {
     }
   }
 
-  if (validGutterValue.test(gutter)) {
+  if (gutter && validGutterValue.test(gutter)) {
     style.margin = `${parseInt(gutter.replace('px', '')) / 2}px`
-  } else {
+  } else if (gutter) {
     console.warn(`'${gutter}' is not a valid value for property 'gutter'.\nPlease use numerical value postfix with 'px'. Example: 8px'`)
   }
 
