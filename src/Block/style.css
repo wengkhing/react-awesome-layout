@@ -1,0 +1,103 @@
+.awe-block {
+  display: flex;
+  width: 100%;
+}
+
+.awe-block.row {
+  flex-direction: row;
+}
+
+.awe-block.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.awe-block.column {
+  flex-direction: column;
+}
+
+.awe-block.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.awe-block.down {
+  flex-wrap: wrap;
+}
+
+.awe-block.up {
+  flex-wrap: wrap-reverse;
+}
+
+.awe-block.base-start {
+  justify-content: flex-start;
+}
+
+.awe-block.base-end {
+  justify-content: flex-end;
+}
+
+.awe-block.base-center {
+  justify-content: center;
+}
+
+.awe-block.base-between {
+  justify-content: space-between;
+}
+
+.awe-block.base-around {
+  justify-content: space-around;
+}
+
+.awe-block.cross-start {
+  align-items: flex-start;
+}
+
+.awe-block.cross-end {
+  align-items: flex-end;
+}
+
+.awe-block.cross-center {
+  align-items: center;
+}
+
+.awe-block.cross-baseline {
+  align-items: baseline;
+}
+
+.awe-block.cross-stretch {
+  align-items: stretch;
+}
+
+.awe-child {
+  flex-shrink: 1;
+}
+
+.awe-child.grow {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.awe-child.no-grow {
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+.awe-child.self-start {
+  align-self: flex-start;
+}
+
+.awe-child.self-end {
+  align-self: flex-end;
+}
+
+.awe-child.self-center {
+  align-self: center;
+}
+
+.awe-child.self-baseline {
+  align-self: baseline;
+}
+
+.awe-child.self-stretch {
+  align-self: stretch;
+}
+
