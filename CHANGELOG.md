@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.5-0"></a>
+## [0.1.5-0](https://github.com/wengkhing/react-awesome-layout/compare/v0.1.4...v0.1.5-0) (2018-01-16)
+
+
+### Bug Fixes
+
+* **config:** build url error ([ee7747c](https://github.com/wengkhing/react-awesome-layout/commit/ee7747c))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/wengkhing/react-awesome-layout/compare/v0.1.3...v0.1.4) (2018-01-16)
 
