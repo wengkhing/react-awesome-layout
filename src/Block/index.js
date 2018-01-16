@@ -22,6 +22,7 @@ const defaultChildProps = {
 // =========================
 const validBasisValue = /^[0-9]*(vw|px|vh|%)$/
 const validGutterValue = /^[0-9]*px$/
+const validOrderValue = /^[0-9]*$/
 
 const Block = (props) => {
   const { blockClassNames, blockStyle } = generateBlockClasses(props)
@@ -185,6 +186,12 @@ function generateChildClasses (props, parentLayout, gutter) {
     style.margin = `${parseInt(gutter.replace('px', ''), 10) / 2}px`
   } else if (gutter) {
     console.warn(`'${gutter}' is not a valid value for property 'gutter'.\nPlease use numerical value postfix with 'px'. Example: 8px'`)
+  }
+
+  if (childProps.order && validOrderValue.test(childProps.order)) {
+    style.order = childProps.order
+  } else if (childProps.order) {
+    console.warn(`'${childProps.order}' is not a valid value for property 'order'.\nPlease use integer value.`)
   }
 
   return { childClassNames: classNames, childStyle: style }
