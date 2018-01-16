@@ -10,7 +10,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "lint": "standard --verbose --fix | snazzy",
     "prerelease": "standard-version --prerelease",
-    "release": "yarn release:patch",
+    "release": "standard-version --release-as patch",
     "release:first": "standard-version --first-release",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
