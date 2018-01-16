@@ -10,6 +10,11 @@ This package is inspired by [angular/flex-layout](https://github.com/angular/fle
 
 To gain more understanding about `CSS Flexbox`, please read [a guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+## Installation
+```
+yarn add react-awesome-layout
+```
+
 ## Usage
 
 ```html
