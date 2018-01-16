@@ -1,6 +1,14 @@
 # React Awesome Layout
 
+We all know CSS Flexbox is the great new layout method that gives us the control that we never had before. But the CSS attributes for Flexbox can be confusing sometimes.
+
+`react-awesome-layout` is designed to eliminate the need of memorizing the awkward css attribute namings and remove the need of implementing flexbox code in your CSS file.
+
 This library provide smart, syntactic component to allow developers to easily and intuitively create responsive and adaptive layouts using Flexbox CSS.
+
+This package is inspired by [angular/flex-layout](https://github.com/angular/flex-layout)
+
+To gain more understanding about `CSS Flexbox`, please read [a guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Usage
 
@@ -39,3 +47,6 @@ When layout is `column | column-reverse`, main-axis is height and cross-axis is 
 | xBasis | `'auto' \| px \| % \| vw \| vh`<br>Default: `auto` |
 | alignSelf | `'start' \| 'end' \| 'center' \| 'stretch' \| 'baseline' \| 'auto'`<br>Default: `auto` |
 | order | integer value<br>Default: `0` |
+
+### License
+License: MIT
