@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-layout",
-  "version": "0.1.6",
+  "version": "0.1.7-0",
   "description": "Provides HTML UI layout for React applications; using Flexbox and a Responsive API",
   "main": "build/index.js",
   "scripts": {
