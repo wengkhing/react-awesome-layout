@@ -11,6 +11,34 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "standard --verbose --fix | snazzy",
+    "prerelease": "standard-version --prerelease",
+    "release": "yarn release:patch",
+    "release:first": "standard-version --first-release",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:dry": "standard-version --dry-run",
+    "precommit": "yarn lint"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": [
+      "jest",
+      "browser",
+      "es6"
+    ],
+    "ignore": [
+      "/build/",
+      "/config/",
+      "/src/registerServiceWorker.js"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "standard-version": "^4.3.0"
   }
 }
