@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import Block from './Block'
+import Block from '../lib'
 
 class App extends Component {
   render () {
