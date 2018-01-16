@@ -28,8 +28,8 @@ Default value will be used if none provided
 | gutter | Gutter space between child defined in `px` |
 
 #### Please take note
-When layout is `row \| row-reverse`, main-axis is width and cross-axis is height;
-When layout is `column \| column-reverse`, main-axis is height and cross-axis is width.
+When layout is `row | row-reverse`, main-axis is width and cross-axis is height;
+When layout is `column | column-reverse`, main-axis is height and cross-axis is width.
 
 ### API for child of Block
 
