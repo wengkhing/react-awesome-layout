@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1-0"></a>
+## [0.1.1-0](https://github.com/wengkhing/react-awesome-layout/compare/v0.1.0...v0.1.1-0) (2018-01-16)
+
+
+### Bug Fixes
+
+* **readme:** use escape char for all display pipe sign ([f16ad29](https://github.com/wengkhing/react-awesome-layout/commit/f16ad29))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-01-16)
 
